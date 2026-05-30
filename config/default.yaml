@@ -1,0 +1,23 @@
+# AgentTest Default Configuration
+
+# Claude model for AI-powered evaluations
+model: "claude-sonnet-4-20250514"
+
+# Directory to store test run results
+results_dir: "~/.agenttest/results"
+
+# Default timeout for agent responses (seconds)
+timeout: 60
+
+# Default agent configuration
+agent:
+  type: cli
+  timeout: 60
+
+# Evaluation settings
+evaluation:
+  # Model to use for AI judge evaluations
+  ai_judge_model: "claude-sonnet-4-20250514"
+
+  # Default threshold for semantic similarity (0.0 - 1.0)
+  semantic_threshold: 0.7

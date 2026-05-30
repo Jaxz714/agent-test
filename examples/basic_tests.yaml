@@ -1,0 +1,51 @@
+name: "Basic Agent Tests"
+description: "Example test suite demonstrating AgentTest features"
+agent:
+  type: cli
+  command: "echo"
+
+tests:
+  - name: "Basic greeting"
+    input: "Hello, how are you?"
+    expect:
+      - type: contains
+        value: "Hello"
+      - type: length
+        max: 500
+
+  - name: "Code generation"
+    input: "Write a Python function to reverse a string"
+    expect:
+      - type: contains
+        value: "def "
+      - type: ai_judge
+        criteria: "Should contain valid Python code with a function definition that reverses a string"
+      - type: length
+        min: 10
+        max: 2000
+
+  - name: "Math question"
+    input: "What is 2 + 2?"
+    expect:
+      - type: contains
+        value: "4"
+      - type: ai_judge
+        criteria: "Should correctly state that 2 + 2 equals 4"
+      - type: length
+        max: 200
+
+  - name: "Short response"
+    input: "Say yes or no: is the sky blue?"
+    expect:
+      - type: contains
+        value: "yes"
+      - type: length
+        max: 50
+
+  - name: "Regex pattern check"
+    input: "What year is it?"
+    expect:
+      - type: regex
+        pattern: "\\d{4}"
+      - type: ai_judge
+        criteria: "Should mention a valid year"
