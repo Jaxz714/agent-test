@@ -50,7 +50,7 @@ def run(
     init_config()
     cfg = load_config(config)
 
-    model = model or cfg.get("model", "claude-sonnet-4-20250514")
+    model = model or cfg.get("model", "claude-sonnet-4-6")
 
     if verbose:
         console.print(f"[dim]Loading tests from: {path}[/dim]")

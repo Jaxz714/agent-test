@@ -1,7 +1,7 @@
 # AgentTest Default Configuration
 
 # Claude model for AI-powered evaluations
-model: "claude-sonnet-4-20250514"
+model: "claude-sonnet-4-6"
 
 # Directory to store test run results
 results_dir: "~/.agenttest/results"
@@ -17,7 +17,7 @@ agent:
 # Evaluation settings
 evaluation:
   # Model to use for AI judge evaluations
-  ai_judge_model: "claude-sonnet-4-20250514"
+  ai_judge_model: "claude-sonnet-4-6"
 
   # Default threshold for semantic similarity (0.0 - 1.0)
   semantic_threshold: 0.7

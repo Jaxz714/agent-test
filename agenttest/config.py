@@ -49,7 +49,7 @@ def load_config(config_path: str | Path | None = None) -> dict[str, Any]:
 def get_default_config() -> dict[str, Any]:
     """Get default configuration."""
     return {
-        "model": "claude-sonnet-4-20250514",
+        "model": "claude-sonnet-4-6",
         "results_dir": str(get_results_dir()),
         "timeout": 60,
         "agent": {
@@ -57,7 +57,7 @@ def get_default_config() -> dict[str, Any]:
             "timeout": 60,
         },
         "evaluation": {
-            "ai_judge_model": "claude-sonnet-4-20250514",
+            "ai_judge_model": "claude-sonnet-4-6",
             "semantic_threshold": 0.7,
         },
     }

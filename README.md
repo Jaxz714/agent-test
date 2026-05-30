@@ -129,11 +129,11 @@ agent:
 Create a config file at `~/.agenttest/config.yaml`:
 
 ```yaml
-model: "claude-sonnet-4-20250514"
+model: "claude-sonnet-4-6"
 results_dir: "~/.agenttest/results"
 timeout: 60
 evaluation:
-  ai_judge_model: "claude-sonnet-4-20250514"
+  ai_judge_model: "claude-sonnet-4-6"
   semantic_threshold: 0.7
 ```
 

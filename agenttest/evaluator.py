@@ -16,7 +16,7 @@ from agenttest.models import (
 class Evaluator:
     """Evaluates agent output against expectations."""
 
-    def __init__(self, anthropic_client: Any | None = None, model: str = "claude-sonnet-4-20250514"):
+    def __init__(self, anthropic_client: Any | None = None, model: str = "claude-sonnet-4-6"):
         self.client = anthropic_client
         self.model = model
 
