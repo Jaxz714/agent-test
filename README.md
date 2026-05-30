@@ -1,3 +1,5 @@
+[English](README.md) | [中文](README_CN.md)
+
 # AgentTest
 
 Testing framework for AI agents -- define tests in YAML, evaluate with AI-powered assertions, track regressions.
